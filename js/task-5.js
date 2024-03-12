@@ -1,4 +1,5 @@
 const body = document.querySelector('body');
+const container = document.querySelector('.widget');
 const btn = document.querySelector('.change-color');
 const span = document.querySelector('.color');
 
