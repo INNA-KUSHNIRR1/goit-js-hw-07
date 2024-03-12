@@ -13,7 +13,6 @@ function onFormSubmit(event) {
   } else {
     const formData = { email, password };
     console.log(formData);
+    form.reset();
   }
-
-  form.reset();
 }

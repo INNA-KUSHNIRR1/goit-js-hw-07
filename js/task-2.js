@@ -34,5 +34,4 @@ const itemImg = images
   )
   .join('');
 
-console.log(itemImg);
-gallery.insertAdjacentHTML('afterbegin', itemImg);
+gallery.insertAdjacentHTML('beforeend', itemImg);
