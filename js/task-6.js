@@ -17,7 +17,7 @@ function onCreateBtnClick(event) {
 
 function createBoxes(amount) {
   if (amount > 1 || amount < 100) {
-    onDestroyBtnClick();
+    destroyBoxes();
 
     let arrayBoxes = [];
     for (let i = 0; i < amount; i++) {
@@ -34,9 +34,11 @@ function createBoxes(amount) {
 }
 
 function onDestroyBtnClick() {
+  destroyBoxes();
+}
+function destroyBoxes() {
   boxes.innerHTML = '';
 }
-
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
